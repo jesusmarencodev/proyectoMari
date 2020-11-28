@@ -18,6 +18,7 @@ const Fomulario = ({temp, setTemp}) => {
     correo : '',
     temp : temp,
   })
+  const { tipoDoc, documento,  nomUsuario,  tel,  correo } = formValue;
 
   const handleInputChange = ({target}) => {
 		setFormValue({
@@ -27,9 +28,18 @@ const Fomulario = ({temp, setTemp}) => {
 	}
 
 
-
+  const reset = () =>{
+    setFormValue({
+      tipoDoc : '1',
+      documento : '',
+      nomUsuario : '',
+      tel : '',
+      correo : '',
+      temp : temp,
+    })
+  }
   
-  const { tipoDoc, documento,  nomUsuario,  tel,  correo } = formValue;
+  
 
   useEffect(() => {
     let e = {
@@ -50,7 +60,7 @@ const Fomulario = ({temp, setTemp}) => {
     
     if(response.status === 201){
       Swal.fire('Good', 'Usuario Registrado', 'success');
-      //reset();
+      reset();
       setTemp(0.0);
       
     }
@@ -69,7 +79,7 @@ const Fomulario = ({temp, setTemp}) => {
     if(e.key==='Enter' && documento.length > 3){
       const response = await fetchPetitionGet(`users/${1}`, 'GET');
       const resp = await response.json();console.log(resp)      
-      setFormValue(resp);
+      setFormValue(resp)
     }
 
     
