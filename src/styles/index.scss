@@ -1,0 +1,110 @@
+.displayFlex {
+  display: flex;
+  flex-direction: row;
+}
+.displayCenter{
+  align-items: center;
+  justify-content: center;
+}
+.nav-item {
+  list-style: none;
+}
+
+.menu{
+  background-color: #196844;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+
+  &:hover{
+    color: #E29510;
+  }
+}
+
+.formulario {
+  label {
+    font-size: 22px;
+  }
+  input {
+    
+    border: 2px solid #93979b65;
+  }
+  .form-control:focus {
+    background-color: #fff;
+    border-color: #9c9898;
+    box-shadow: 0 0 0 0.2rem rgba(95, 97, 98, 0.25);
+    color: #a1a4a8;
+    outline: 0;
+  }
+
+  .btn-guardar{
+    background:#196844;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    height: 60px;
+    width: 200px !important;
+  }
+  .custom-select:focus {
+    border-color: #9c9898;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(95, 97, 98, 0.25);
+  }
+
+}
+
+//temperatura
+.padre-temp {
+  height: 100%;
+}
+.divisiontemp1{
+  height: 200px;
+  top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.divisiontemp2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 70%;
+}
+
+
+.showTemp{
+  align-items: center;
+  border: 3px solid rgba(170, 167, 165, 0.74);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  justify-content: center;
+  width: 75% !important;
+  h3{
+    color: #535353;
+  }
+}
+
+.temp-image{
+  border-radius: 8px;
+  border: 3px solid rgba(170, 167, 165, 0.74);
+  height: 100%;
+  width: 70%;
+}
+.cont-boton {
+  padding-top: 2rem !important;
+}
+
+.btn-temp {
+  background: #E29510;
+  color: #535353;
+  font-size: 22px;
+  font-weight: 700;
+  height: 60px;
+  line-height: .8;
+  width: 200px !important;
+}
