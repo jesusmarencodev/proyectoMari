@@ -5,7 +5,6 @@ export const useForm = (initialState = {}) => {
 	const [ formState, setFormState ] = useState(initialState);
 
 	const reset = () => {
-		console.log('jejejejeje')
 		setFormState( initialState );
 	}
 

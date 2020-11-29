@@ -82,9 +82,6 @@ const Fomulario = ({temp, setTemp}) => {
       setFormValue(resp)
     }
 
-    
-  
-  
   }
 
   return (
