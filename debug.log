@@ -31,3 +31,4 @@
 [1127/121941.044:ERROR:exception_snapshot_win.cc(99)] thread ID 5768 not found in process
 [1127/132540.015:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1128/132255.422:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1128/200753.457:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
