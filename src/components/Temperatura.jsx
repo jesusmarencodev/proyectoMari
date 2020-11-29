@@ -3,7 +3,11 @@ import { fetchPetitionGetTemp } from "../helpers/fetchPetition";
 
 const Temperatura = ({setTemp, temp}) => {
 
-  const [temperature, setTemperature] = useState({})
+  const [temperature, setTemperature] = useState({
+    img : '',
+    pasa : 1,
+    temperature : 0.0
+  })
 
   const hanldeTemperature = async(e) => {
     e.preventDefault();
@@ -36,7 +40,7 @@ const Temperatura = ({setTemp, temp}) => {
       <div className="row padre-temp">
         <div className="col-4 divisiontemp1">
           <div className="showTemp">
-            <h4>{temp}</h4>
+            <h4 className={ pasa == 1 ? 'verde' : 'rojo'}>{temp}</h4>
           </div>
         </div>
         <div className="col-8 divisiontemp2">
